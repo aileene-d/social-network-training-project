@@ -54,7 +54,7 @@ function PostForm() {
             // required
             onChange={onChange}
             value={ValuesOfCorrectTypeRule.body}
-            error={error ? true : false}
+            error={!!error}
           />
           <Button type="submit" color="teal">
             Submit

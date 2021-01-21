@@ -40,7 +40,7 @@ function Login(props) {
           name="username"
           type="text"
           value={values.username}
-          error={errors.username ? true : false}
+          error={!!errors.username}
           onChange={onChange}
         />
 
@@ -50,7 +50,7 @@ function Login(props) {
           name="password"
           type="password"
           value={values.password}
-          error={errors.password ? true : false}
+          error={!!errors.password}
           onChange={onChange}
         />
 
